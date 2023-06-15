@@ -1,0 +1,44 @@
+<title>Faux Blog Sign Up</title>
+<div class="container">
+    <form class="signup-form text-center col-lg-6 mx-auto">
+        <br>
+        <h1 class="display-4 fw-bolder text-black">Sign Up</h1>
+        <p class="lead fw-normal text-black-50 mb-0">Please fill in this form to <b>create an account</b>.</p>
+        <hr>
+
+        <div class="form-group">
+            <label for="name" class="sign-up"><b>Name</b></label>
+            <input type="text" placeholder="Enter Full Name" name="full-name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="sign-up"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="psw" class="sign-up"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="psw-confirmation" class="sign-up"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Confirm Password" name="psw-confirmation" class="form-control" required>
+        </div>
+
+        <div class="form-group form-check">
+            <div class="form-check-inline">
+                <input type="checkbox" name="over13" id="over13" class="form-check-input" required>
+                <label for="over13" class="form-check-label sign-up">I am over 13 years old</label>
+            </div>
+        </div>
+
+        <p class="text-black">By creating an account you agree to our <a href="images\TCs.png" target="_blank"
+                class="text-primary">Terms & Conditions</a>.</p>
+
+        <button id="submit-btn" type="submit" class="btn btn-primary sign-up-btn" disabled>Create Account</button>
+        <button type="button" class="btn btn-secondary sign-up-btn">Cancel</button>
+    </form>
+</div>
+
+<script src="/js/signup.js"></script>

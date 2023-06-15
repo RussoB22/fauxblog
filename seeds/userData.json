@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Naroot Vegetable",
+    "email": "naroot@veggie.com",
+    "password": "123qweasd",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Sauce-ke Tomato",
+    "email": "sauce-ke@tomato.com",
+    "password": "SharinganSecret1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Sakura Blossom",
+    "email": "sakura@blossom.com",
+    "password": "InnerSakura1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Kakrush Sprout",
+    "email": "kakrush@sprout.com",
+    "password": "CopyNinja1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Hinectarine",
+    "email": "hinectarine@fruit.com",
+    "password": "Byakugan1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Chicorymaru",
+    "email": "chicorymaru@salad.com",
+    "password": "ShadowParalysis1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Ino-lemon",
+    "email": "ino@lemon.com",
+    "password": "MindTransfer1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Choyji Bokchoy",
+    "email": "choyji@bokchoy.com",
+    "password": "SuperExpansion1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Negi Onion",
+    "email": "negi@onion.com",
+    "password": "TrigramPalm1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  },
+  {
+    "name": "Tenturnip",
+    "email": "tenturnip@veggie.com",
+    "password": "WeaponsMaster1!",
+    "over13": true,
+    "termsofservice": true,
+    "privatepolicyagreement": true
+  }
+]

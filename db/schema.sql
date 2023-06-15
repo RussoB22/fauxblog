@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS fauxblog_db;
+CREATE DATABASE fauxblog_db;
