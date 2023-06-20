@@ -10,7 +10,8 @@ router.get('/', async (req, res) => {
         res.status(500).json({ message: 'Error retrieving user ID from session' });
       }
     } else {
-      res.status(401).json({ message: req });
+      res.status(401).json({ message: 'User not authenticated' });
     }
-  });
- module.exports = router; 
+});
+
+module.exports = router;

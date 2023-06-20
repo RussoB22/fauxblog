@@ -1,14 +1,15 @@
 <title>Dashboard</title>
 
+
 <section>
     <div class="header-section p-4">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="card h-100">
-                        <div class="card-body p-4">
-                            <h3 class="card-title text-center mb-4">Create Post</h3>
-                            <form id="create-post-form">
+                <div class="d-block">
+                    <div class="card h-100 rounded-4">
+                        <div class="card-body p-1 bg-black rounded-3">
+                            <h3 class="card-title text-center text-white px-2">Create Post</h3>
+                            <form id="create-post-form" class="bg-success-subtle rounded-2 p-2">
                                 <div class="mb-3">
                                     <label for="post-title" class="form-label">Title</label>
                                     <input type="text" class="form-control" id="post-title" name="title" required>
@@ -33,16 +34,16 @@
 
 <section>
     <div class="header-section p-4">
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="container px-4 mt-5">
+            <div class="d-block justify-content-center">
                 {{#each posts as |post|}}
-                <div class="col mb-5">
-                    <div class="card h-100">
+                <div class="col mb-5 p-1 bg-black rounded-3">
+                    <div class="card h-100 rounded-3">
                         <form class="edit-post-form">
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <h5 class="product_h5 seller-name">Poster: {{post.poster.name}} </h5>
-                                    <div class="form-group">
+                            <div class="card-body bg-success-subtle rounded-top-3">
+                                <div class="">
+                                    <h5 class="product_h5 text-center">Poster: {{post.poster.name}} </h5>
+                                    <div class="form-group ">
                                         <label for="post-title-{{post.post_id}}">Title</label>
                                         <input type="text" class="form-control" id="post-title-{{post.post_id}}"
                                             value="{{post.title}}">
@@ -52,14 +53,14 @@
                                         <textarea class="form-control" id="post-text-{{post.post_id}}"
                                             rows="3">{{post.text}}</textarea>
                                     </div>
-                                    <p class="product_p amount-available">Posted Time: {{post.posted_time}}</p>
+                                    <p class="product_p mt-2">Posted Time: {{post.posted_time}}</p>
                                 </div>
                             </div>
-                            <div class="card-footer bg-transparent">
+                            <div class="card-footer bg-black rounded-bottom-3 p-1">
                                 <div class="d-flex justify-content-between">
-                                    <button type="submit" class="edit-btn btn btn-outline-dark flex-fill mx-2"
+                                    <button type="submit" class="edit-btn btn btn-outline-dark flex-fill mx-2 bg-white"
                                         data-id="{{post.post_id}}">Edit</button>
-                                    <a class="delete-btn btn btn-outline-dark flex-fill mx-2"
+                                    <a class="delete-btn btn btn-outline-dark flex-fill mx-2 bg-white"
                                         data-id="{{post.post_id}}">Delete</a>
                                 </div>
                             </div>

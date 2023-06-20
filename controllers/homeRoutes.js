@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, UserPost} = require('../models');
 const withAuth = require('../utils/auth');
+const moment = require('moment');
 
 router.get('/', async (req, res) => {
   try {
@@ -14,7 +15,12 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    const posts = postData.map(post => post.get({ plain: true }));
+    const posts = postData.map(post => {
+      let plainPost = post.get({ plain: true });
+      // Convert the posted_time to "MM/DD/YY, hh:mm:ss A" format
+      plainPost.posted_time = moment(plainPost.posted_time).format('MM/DD/YY, h:mm:ss A');
+      return plainPost;
+    });
 
     res.render('homepage', {
       user: req.session.user,
@@ -47,7 +53,12 @@ router.get('/dashboard', withAuth, async (req, res) => {
       ],
     });
 
-    const posts = postData.map(post => post.get({ plain: true }));
+    const posts = postData.map(post => {
+      let plainPost = post.get({ plain: true });
+      // Convert the posted_time to "MM/DD/YY, hh:mm:ss A" format
+      plainPost.posted_time = moment(plainPost.posted_time).format('MM/DD/YY, h:mm:ss A');
+      return plainPost;
+    });
 
     res.render('dashboard', {
       user: req.session.user,

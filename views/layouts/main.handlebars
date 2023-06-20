@@ -16,35 +16,41 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
     integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="/css/custom.css" />
 </head>
 
-<body class="main_background d-flex flex-column flex-wrap">
+<body class="d-flex flex-column flex-wrap bg-success-subtle">
   <header class="p-4">
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top bg-black">
       <div class="container-fluid">
 
         <div class="col-1 d-flex flex-column align-items-center">
-          <a href="../" class="navbar_title">Home</a>
+          <a href="../" class="navbar_title link-underline-opacity-0 link-light fw-bold">Home</a>
         </div>
 
         <div class="col-1 d-flex flex-column align-items-center">
-          <a href="../dashboard" class="navbar_title">Dashboard</a>
+          <a href="../dashboard" class="navbar_title link-underline-opacity-0 link-light fw-bold">Dashboard</a>
         </div>
 
         <div class="col-1 d-flex flex-column align-items-center">
-          <a href="../profile" class="navbar_title">My Profile</a>
+          <a href="../profile" class="navbar_title link-underline-opacity-0 link-light fw-bold">Profile</a>
         </div>
 
         <div class="col-1 d-flex flex-column align-items-center">
           {{#if logged_in}}
-          <a href="../" id="logout" class="navbar_title">Log Out</a>
+          <a href="../" id="logout" class="navbar_title link-underline-opacity-0 link-light fw-bold">Log Out</a>
           {{else}}
-          <a href="../login" id="login" class="navbar_title">Log In</a>
+          <a href="../login" id="login" class="navbar_title link-underline-opacity-0 link-light fw-bold">Log In</a>
           {{/if}}
         </div>
 
+
+      </div>
+      <div class="ms-5">
+        <h1 class="d-inline-flex black bg-success-subtle rounded mt-4 px-4 pb-2">Faux Blog</h1>
       </div>
     </nav>
+
   </header>
 
   <main class="container container-fluid mt-5">

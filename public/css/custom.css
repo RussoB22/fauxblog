@@ -1,0 +1,13 @@
+.card-bodyRB {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bs-card-color);
+}
+
+.scrollable-ul {
+    max-height: 55vh;
+    overflow-y: auto;
+}

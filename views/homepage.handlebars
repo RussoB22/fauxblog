@@ -3,17 +3,19 @@
 <!-- Section-->
 <section>
     <div class="header-section p-4">
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="container px-4 mt-5">
+            <div class="d-block justify-content-center">
                 {{#each posts as |post|}}
-                <div class="col mb-5">
-                    <div class="post-card card h-100" data-id="{{post.post_id}}">
-                        <div class="card-body p-4">
+                <div class="col mb-5 ">
+                    <div class="post-card card h-100 rounded-3" data-id="{{post.post_id}}">
+                        <div class="card-body p-1 bg-black rounded-3">
                             <div class="text-center">
-                                <h3 class="product_h4 product-name fw-bolder">{{post.title}} </h3>
-                                <h5 class="product_h5 seller-name">Poster: {{post.poster.name}} </h5>
-                                <p class="product_p text"> {{post.text}} </p>
-                                <p class="product_p amount-available"> Posted Time: {{post.posted_time}} </p>
+                                <h3 class="product_h4 fw-bolder text-white px-2">{{post.title}} </h3>
+                                <div class="bg-success-subtle rounded-2 p-2">
+                                    <h5 class="product_h5">Poster: {{post.poster.name}} </h5>
+                                    <p class="product_p"> {{post.text}} </p>
+                                    <p class="product_p"> Posted Time: {{post.posted_time}} </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -33,16 +35,18 @@
             </div>
             <div class="modal-body">
                 <h4 id="postTitle"></h4>
+                <h6 id="postPoster"></h6>
                 <p id="postText"></p>
+                <p id="postTime"></p>
                 <h5 class="text-center">Comments</h5>
-                <ul id="postComments">
+                <ul id="postComments" class="scrollable-ul">
                 </ul>
                 <form id="commentForm">
                     <div class="form-group">
                         <label for="commentText">New Comment:</label>
                         <textarea class="form-control" id="commentText" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary mt-1">Submit</button>
                 </form>
             </div>
             <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModalBtn">Close</button>
