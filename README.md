@@ -18,6 +18,7 @@ Clone the Github Repo and npm i.
 
 ## Usage
 After installation you can do a npm run watch and nodemon will run the server. Follow along the video to see the other functions.
+Link to video: https://youtu.be/7MkQTd5BJbE
 
 ## Contributing
 None at this time.
