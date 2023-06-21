@@ -93,5 +93,20 @@ document.querySelectorAll('.edit-post-form').forEach(form => {
     });
 });
 
-  
+document.querySelectorAll('.post-card').forEach(title => {
+    title.addEventListener('click', () => {
+        const postId = title.getAttribute('data-id');
+        const textElement = document.getElementById('post-text-' + postId);
+        const footerElement = document.querySelector(`.card-footer[data-id="${postId}"]`);
+
+        if (textElement.style.display === "none") {
+            textElement.style.display = "block";
+            footerElement.style.display = "flex"; 
+        } else {
+            textElement.style.display = "none";
+            footerElement.style.display = "none";
+        }
+    });
+});
+
 

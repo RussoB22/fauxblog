@@ -11,3 +11,16 @@
     max-height: 55vh;
     overflow-y: auto;
 }
+
+.form-group {
+    text-align: center; /* This will center the text within the label. */
+}
+
+.post-card {
+    transition: 0.3s; /* This will animate the scaling. */
+}
+
+.post-card:hover {
+    transform: scale(1.1);
+    background-color: darken(black, 10%);
+  }
