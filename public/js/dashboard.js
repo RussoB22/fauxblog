@@ -61,15 +61,15 @@ createPostForm.addEventListener('submit', async (event) => {
     }
 });
 
-document.querySelectorAll('.edit-post-form').forEach(form => {
-    form.addEventListener('submit', (event) => {
+document.querySelectorAll('.edit-btn').forEach(btn => {
+    btn.addEventListener('click', (event) => {
         event.preventDefault();
 
-        const postId = event.target.querySelector('.edit-btn').getAttribute('data-id');
+        const postId = btn.getAttribute('data-id');
 
         const updatedPost = {
             title: document.querySelector('#post-title-' + postId).value,
-            text: document.querySelector('#post-text-' + postId).value,
+            text: document.querySelector('#post-text-area-' + postId).value,
             posted_time: new Date().toISOString()
           };
 
@@ -92,6 +92,7 @@ document.querySelectorAll('.edit-post-form').forEach(form => {
         });
     });
 });
+
 
 document.querySelectorAll('.post-card').forEach(title => {
     title.addEventListener('click', () => {

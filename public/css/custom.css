@@ -16,11 +16,11 @@
     text-align: center; /* This will center the text within the label. */
 }
 
-.post-card {
+.enhanced {
     transition: 0.3s; /* This will animate the scaling. */
 }
 
-.post-card:hover {
+.enhanced:hover {
     transform: scale(1.1);
-    background-color: darken(black, 10%);
+    color: darken(green, 100%);
   }
